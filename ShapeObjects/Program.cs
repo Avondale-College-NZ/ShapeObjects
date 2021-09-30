@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 
 namespace ShapeObjects
 {
@@ -26,6 +27,8 @@ namespace ShapeObjects
             Console.WriteLine("The area of the sphere 2 is : {0}", Math.Round(S2.calcArea(), 2));
             Console.WriteLine("The volume of the sphere 2 is : {0}", Math.Round(S2.calcVolume(), 2));
 
+            Ball B1 = new Ball(2);
+            Console.WriteLine("The area of the ball is {0}", Math.Round(B1.calcArea(),2));
         }
     }
 }

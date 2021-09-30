@@ -4,13 +4,11 @@ using System.Text;
 
 namespace ShapeObjects
 {
-    class Sphere : Shapes
+    class Sphere : Circle
     {
-        public Sphere(int Radius)
+        public Sphere(int Radius) : base(Radius)
         {
-            _radius = Radius;
         }
-
         public new double calcArea()
         {
             return 4 * _PI * Math.Pow(_radius, 2);
@@ -20,5 +18,12 @@ namespace ShapeObjects
         {
             return 4 * _PI * Math.Pow(_radius, 3) / 3;
         }
+    }
+    
+    class Ball : Sphere
+    {
+       public Ball(int Radius) : base(Radius)
+       {            
+       }
     }
 }
